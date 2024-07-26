@@ -21,6 +21,10 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "my-new-header",
+								"value": "123"
 							}
 						],
 						"url": "{{baseUrl}}/hello",
