@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "989559cc-0dbd-40c0-9abc-b15e319512c4",
+		"name": "Hello World API",
+		"description": "A simple API that returns \"Hello, World!\"",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"item": [
+				{
+					"name": "Returns a Hello World message",
+					"id": "409ed096-a45a-495d-9ae4-1f1c9fb4f052",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseUrl}}/hello",
+						"description": "This endpoint returns a simple \"Hello, World!\" message."
+					},
+					"response": [
+						{
+							"id": "e7b7a989-e186-43f7-ba91-fe71e6ac08a4",
+							"name": "Successful response with a hello message",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseUrl}}/hello"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n  \"message\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "71dde7a3-5abc-4a50-9bf3-763bba446c19"
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
